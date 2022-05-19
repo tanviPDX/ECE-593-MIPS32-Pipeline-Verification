@@ -1,0 +1,161 @@
+//thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/controlUnit/conditionChecker.v {1 {vlog -work work -vopt -stats=none //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/controlUnit/conditionChecker.v
+QuestaSim-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module conditionChecker
+
+Top level modules:
+	conditionChecker
+
+} {} {}} //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/controlUnit/controller.v {1 {vlog -work work -vopt -stats=none //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/controlUnit/controller.v
+QuestaSim-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module controller
+
+Top level modules:
+	controller
+
+} {} {}} //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/hazard_forwarding/hazardDetection.v {1 {vlog -work work -vopt -stats=none //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/hazard_forwarding/hazardDetection.v
+QuestaSim-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module hazard_detection
+
+Top level modules:
+	hazard_detection
+
+} {} {}} //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/register.v {1 {vlog -work work -vopt -stats=none //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/register.v
+QuestaSim-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module register
+
+Top level modules:
+	register
+
+} {} {}} //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/pipeStages/IDStage.v {1 {vlog -work work -vopt -stats=none //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/pipeStages/IDStage.v
+QuestaSim-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module IDStage
+
+Top level modules:
+	IDStage
+
+} {} {}} //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/hazard_forwarding/forwarding.v {1 {vlog -work work -vopt -stats=none //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/hazard_forwarding/forwarding.v
+QuestaSim-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module forwarding_EXE
+
+Top level modules:
+	forwarding_EXE
+
+} {} {}} //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/pipeRegisters/ID2EXE.v {1 {vlog -work work -vopt -stats=none //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/pipeRegisters/ID2EXE.v
+QuestaSim-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module ID2EXE
+
+Top level modules:
+	ID2EXE
+
+} {} {}} //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/pipeStages/IFStage.v {2 {vlog -work work -vopt -stats=none //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/pipeStages/IFStage.v
+QuestaSim-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module IFStage
+** Warning: //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/pipeStages/IFStage.v(5): (vlog-2417) Multiple packed dimensions are not allowed.
+
+Top level modules:
+	IFStage
+
+} {} {}} //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/pipeStages/MEMStage.v {1 {vlog -work work -vopt -stats=none //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/pipeStages/MEMStage.v
+QuestaSim-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module MEMStage
+
+Top level modules:
+	MEMStage
+
+} {} {}} //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/memoryModules/regFile.v {1 {vlog -work work -vopt -stats=none //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/memoryModules/regFile.v
+QuestaSim-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module regFile
+
+Top level modules:
+	regFile
+
+} {} {}} //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/signExtend.v {1 {vlog -work work -vopt -stats=none //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/signExtend.v
+QuestaSim-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module signExtend
+
+Top level modules:
+	signExtend
+
+} {} {}} //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/mux.v {1 {vlog -work work -vopt -stats=none //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/mux.v
+QuestaSim-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module mux
+-- Compiling module mux_3input
+
+Top level modules:
+	mux
+	mux_3input
+
+} {} {}} //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/ALU.v {1 {vlog -work work -vopt -stats=none //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/ALU.v
+QuestaSim-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/pipeStages/EXEStage.v {1 {vlog -work work -vopt -stats=none //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/pipeStages/EXEStage.v
+QuestaSim-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module EXEStage
+
+Top level modules:
+	EXEStage
+
+} {} {}} //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/pipeRegisters/IF2ID.v {1 {vlog -work work -vopt -stats=none //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/pipeRegisters/IF2ID.v
+QuestaSim-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module IF2ID
+
+Top level modules:
+	IF2ID
+
+} {} {}} //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/topLevelCircuit.v {2 {vlog -work work -vopt -stats=none //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/topLevelCircuit.v
+QuestaSim-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module MIPS_Processor
+** Warning: //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/topLevelCircuit.v(3): (vlog-2417) Multiple packed dimensions are not allowed.
+
+Top level modules:
+	MIPS_Processor
+
+} {} {}} //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/pipeRegisters/MEM2WB.v {1 {vlog -work work -vopt -stats=none //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/pipeRegisters/MEM2WB.v
+QuestaSim-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module MEM2WB
+
+Top level modules:
+	MEM2WB
+
+} {} {}} //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/adder.v {1 {vlog -work work -vopt -stats=none //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/adder.v
+QuestaSim-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/pipeRegisters/EXE2MEM.v {1 {vlog -work work -vopt -stats=none //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/pipeRegisters/EXE2MEM.v
+QuestaSim-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module EXE2MEM
+
+Top level modules:
+	EXE2MEM
+
+} {} {}} //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/pipeStages/WBStage.v {1 {vlog -work work -vopt -stats=none //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/pipeStages/WBStage.v
+QuestaSim-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module WBStage
+
+Top level modules:
+	WBStage
+
+} {} {}} //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/memoryModules/dataMem.v {1 {vlog -work work -vopt -stats=none //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/memoryModules/dataMem.v
+QuestaSim-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module dataMem
+
+Top level modules:
+	dataMem
+
+} {} {}} //thoth.cecs.pdx.edu/Home04/ritvik2/Downloads/MIPS-pipeline-processor-master/MIPS-pipeline-processor-master/modules/memoryModules/instructionMem.v {2 {vlog -work work -vopt -stats=none {\\thoth.cecs.pdx.edu\Home04\ritvik2\Downloads\MIPS-pipeline-processor-master\MIPS-pipeline-processor-master\modules\memoryModules\instructionMem.v}
+QuestaSim-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+-- Compiling module instructionMem
+** Warning: \\thoth.cecs.pdx.edu\Home04\ritvik2\Downloads\MIPS-pipeline-processor-master\MIPS-pipeline-processor-master\modules\memoryModules\instructionMem.v(6): (vlog-2417) Multiple packed dimensions are not allowed.
+** Warning: \\thoth.cecs.pdx.edu\Home04\ritvik2\Downloads\MIPS-pipeline-processor-master\MIPS-pipeline-processor-master\modules\memoryModules\instructionMem.v(11): (vlog-2417) Multiple packed dimensions are not allowed.
+
+Top level modules:
+	instructionMem
+
+} {} {}}
