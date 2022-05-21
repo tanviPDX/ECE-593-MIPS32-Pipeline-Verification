@@ -3,6 +3,8 @@
  import mips32::*;
 
  class coverage;
+ 
+ //temperory adding these signals. Remove it later
 	rand byte hazard_detected;
 	rand byte forward_EN;
 	rand byte Is_Imm;
