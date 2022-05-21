@@ -1,0 +1,580 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/u/ritvik2/ECE593_2022/Project/Dev_tb/ECE-593-MIPS32-Pipeline-Verification
+vadder
+Z1 !s110 1653110207
+!i10b 1
+!s100 ShK52ca8hHdK6c[Q59J4C0
+!s11b cdS?8`AMke4@B6AeQ@<oZ3
+IDK;oSjlz2CI4SAHNGVPIe2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1653100053
+8modules/adder.v
+Fmodules/adder.v
+L0 3
+Z4 OL;L;2019.2_1;69
+r1
+!s85 0
+31
+Z5 !s108 1653110207.000000
+!s107 defines.v|topLevelCircuit.v|modules/ALU.v|modules/adder.v|modules/hazard_forwarding/hazardDetection.v|modules/hazard_forwarding/forwarding.v|modules/memoryModules/regFile.v|modules/memoryModules/instructionMem.v|modules/memoryModules/dataMem.v|modules/pipeStages/EXEStage.v|modules/pipeStages/WBStage.v|modules/pipeStages/IDStage.v|modules/pipeStages/IFStage.v|modules/pipeStages/MEMStage.v|modules/register.v|modules/signExtend.v|modules/mux.v|modules/controlUnit/conditionChecker.v|modules/controlUnit/controller.v|modules/pipeRegisters/ID2EXE.v|modules/pipeRegisters/EXE2MEM.v|modules/pipeRegisters/MEM2WB.v|modules/pipeRegisters/IF2ID.v|
+Z6 !s90 -coveropt|3|+cover=sbfec|+acc|-v|defines.v|modules/pipeRegisters/IF2ID.v|modules/pipeRegisters/MEM2WB.v|modules/pipeRegisters/EXE2MEM.v|modules/pipeRegisters/ID2EXE.v|modules/controlUnit/controller.v|modules/controlUnit/conditionChecker.v|modules/mux.v|modules/signExtend.v|modules/register.v|modules/pipeStages/MEMStage.v|modules/pipeStages/IFStage.v|modules/pipeStages/IDStage.v|modules/pipeStages/WBStage.v|modules/pipeStages/EXEStage.v|modules/memoryModules/dataMem.v|modules/memoryModules/instructionMem.v|modules/memoryModules/regFile.v|modules/hazard_forwarding/forwarding.v|modules/hazard_forwarding/hazardDetection.v|modules/adder.v|modules/ALU.v|topLevelCircuit.v|
+!i113 0
+Z7 !s102 -coveropt 3 +cover=sbfec
+Z8 o-coveropt 3 +cover=sbfec +acc -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z9 !s92 -coveropt 3 +cover=sbfec +acc -v defines.v -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z10 tCvgOpt 0
+vALU
+R1
+!i10b 1
+!s100 P2hHCleg_M75IlROQ?jLQ2
+!s11b l@@HNeYDDGnRlLk<LoUWQ2
+If`8EAY57`o2gon>MHz@K33
+R2
+R0
+R3
+8modules/ALU.v
+Fmodules/ALU.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+Z11 !s107 defines.v|topLevelCircuit.v|modules/ALU.v|modules/adder.v|modules/hazard_forwarding/hazardDetection.v|modules/hazard_forwarding/forwarding.v|modules/memoryModules/regFile.v|modules/memoryModules/instructionMem.v|modules/memoryModules/dataMem.v|modules/pipeStages/EXEStage.v|modules/pipeStages/WBStage.v|modules/pipeStages/IDStage.v|modules/pipeStages/IFStage.v|modules/pipeStages/MEMStage.v|modules/register.v|modules/signExtend.v|modules/mux.v|modules/controlUnit/conditionChecker.v|modules/controlUnit/controller.v|modules/pipeRegisters/ID2EXE.v|modules/pipeRegisters/EXE2MEM.v|modules/pipeRegisters/MEM2WB.v|modules/pipeRegisters/IF2ID.v|
+R6
+!i113 0
+R7
+R8
+R9
+R10
+n@a@l@u
+vconditionChecker
+R1
+!i10b 1
+!s100 >5PB6a@oad`B@kYoDicG00
+!s11b ^CUDO@zf8njlDa2<;0^zR0
+INcV[7knKA9O=E7P4iiMNe1
+R2
+R0
+R3
+8modules/controlUnit/conditionChecker.v
+Fmodules/controlUnit/conditionChecker.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 0
+R7
+R8
+R9
+R10
+ncondition@checker
+vcontroller
+R1
+!i10b 1
+!s100 2Cae`aF]lmjf]lk^6jNe61
+!s11b MLFH0gBjk1fch;?=8E4J>2
+IJP3kTI^:>2RPOSd^e2QUX3
+R2
+R0
+R3
+8modules/controlUnit/controller.v
+Fmodules/controlUnit/controller.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 0
+R7
+R8
+R9
+R10
+vdataMem
+R1
+!i10b 1
+!s100 ?CanZC=EG=UO]KEkW1U^03
+!s11b Y6]:m[e:YH3oN?P4[gee?0
+I7iaFT@[M8]X<M5]oLLPN_1
+R2
+R0
+R3
+8modules/memoryModules/dataMem.v
+Fmodules/memoryModules/dataMem.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 0
+R7
+R8
+R9
+R10
+ndata@mem
+vEXE2MEM
+R1
+!i10b 1
+!s100 OIlHG=9lRH5`E^V6Lf08]0
+!s11b SFXebkg4PmTdzIlmFCTk:0
+IVGb[Gfk:ZL1E;nT6=F1h;3
+R2
+R0
+R3
+8modules/pipeRegisters/EXE2MEM.v
+Fmodules/pipeRegisters/EXE2MEM.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 0
+R7
+R8
+R9
+R10
+n@e@x@e2@m@e@m
+vEXEStage
+R1
+!i10b 1
+!s100 0XiVKhMaShVLbQ3JoW[AC0
+!s11b G38]W4CzD]PhV2^Ye:aT10
+Ih`moW`_`6d]zkZA8NlEDD1
+R2
+R0
+R3
+8modules/pipeStages/EXEStage.v
+Fmodules/pipeStages/EXEStage.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 0
+R7
+R8
+R9
+R10
+n@e@x@e@stage
+vforwarding_EXE
+R1
+!i10b 1
+!s100 J3_6^9AFfbZ[f[CjDQ6oA0
+!s11b TXajhUZo8e=X]YYd::Go42
+IcbYUhUbF>BKFbAdn[aaeY3
+R2
+R0
+R3
+8modules/hazard_forwarding/forwarding.v
+Fmodules/hazard_forwarding/forwarding.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 0
+R7
+R8
+R9
+R10
+nforwarding_@e@x@e
+vhazard_detection
+R1
+!i10b 1
+!s100 8EZI<X<azccVAQzZ5D1R60
+!s11b `NgQTOVS?H_NJ>M;CU4643
+I22On>kcH>D5YWfQeY0K9:1
+R2
+R0
+R3
+8modules/hazard_forwarding/hazardDetection.v
+Fmodules/hazard_forwarding/hazardDetection.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 0
+R7
+R8
+R9
+R10
+vID2EXE
+R1
+!i10b 1
+!s100 :@CH[na_3cYg?@_]dF1Jc2
+!s11b nHkGL5a9ej=eJOeLANPbo0
+IcEYEHS=;=_@3NMDU`M<6;0
+R2
+R0
+R3
+8modules/pipeRegisters/ID2EXE.v
+Fmodules/pipeRegisters/ID2EXE.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 0
+R7
+R8
+R9
+R10
+n@i@d2@e@x@e
+vIDStage
+R1
+!i10b 1
+!s100 lHHRXL>hHoPclLW91IjzX0
+!s11b m1:HHPn75lgh3EFDJ[:Yf3
+I5CLIL][05e5>;2dfQoN]^2
+R2
+R0
+R3
+8modules/pipeStages/IDStage.v
+Fmodules/pipeStages/IDStage.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 0
+R7
+R8
+R9
+R10
+n@i@d@stage
+vIF2ID
+R1
+!i10b 1
+!s100 >D@AVWf@cf5o6:0YJ1^eo2
+!s11b afIOgPiMlFzU8@eB^EKT31
+I9DbG?o`nmO]j:dka4YicH0
+R2
+R0
+R3
+8modules/pipeRegisters/IF2ID.v
+Fmodules/pipeRegisters/IF2ID.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 0
+R7
+R8
+R9
+R10
+n@i@f2@i@d
+vIFStage
+R1
+!i10b 1
+!s100 CQkITCd;LFlfC57h463oL3
+!s11b HekP]9PIRdCU71TjbWe]K0
+Ie<]L@i@H^WHl`@634>Wb<3
+R2
+R0
+R3
+8modules/pipeStages/IFStage.v
+Fmodules/pipeStages/IFStage.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 0
+R7
+R8
+R9
+R10
+n@i@f@stage
+vinstructionMem
+R1
+!i10b 1
+!s100 QK[aWH]eeHcFYUHVR>HHh3
+!s11b :YRU0fBS9YY?bfDW2_1gV2
+IERJUo@T]f:DRYaLC0kPM=1
+R2
+R0
+R3
+8modules/memoryModules/instructionMem.v
+Fmodules/memoryModules/instructionMem.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 0
+R7
+R8
+R9
+R10
+ninstruction@mem
+vMEM2WB
+R1
+!i10b 1
+!s100 Oj`3?ACOPGR4]@Ym0iN973
+!s11b gc8P_]IN7]WY]^OhQ_hBd0
+ICR35D:CaJI<4GZ8kZLg0T3
+R2
+R0
+R3
+8modules/pipeRegisters/MEM2WB.v
+Fmodules/pipeRegisters/MEM2WB.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 0
+R7
+R8
+R9
+R10
+n@m@e@m2@w@b
+vMEMStage
+R1
+!i10b 1
+!s100 h4D8Yb>2h1nb]l^EQ9@Ng1
+!s11b AL7FS]=ma5h1P7QOaAW5H1
+IT]@hklW`f[G=Y9l[SAlSn0
+R2
+R0
+R3
+8modules/pipeStages/MEMStage.v
+Fmodules/pipeStages/MEMStage.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 0
+R7
+R8
+R9
+R10
+n@m@e@m@stage
+vMIPS_Processor
+R1
+!i10b 1
+!s100 2AR7IoifklHU^zekZHVeD2
+!s11b CPjRR3e@9R^dR4F`V5L=31
+IaCUAOOcBAUkzMB>`jmI_T1
+R2
+R0
+R3
+8topLevelCircuit.v
+FtopLevelCircuit.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 0
+R7
+R8
+R9
+R10
+n@m@i@p@s_@processor
+vmux
+R1
+!i10b 1
+!s100 :VDZ`f=ToH`EkOFS_:`VM1
+!s11b CoBePJ;M`b>VaQ>^Qfk1a0
+IPJ2@ho<bT@5>C`84^1GJ`1
+R2
+R0
+R3
+Z12 8modules/mux.v
+Z13 Fmodules/mux.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 0
+R7
+R8
+R9
+R10
+vmux_3input
+R1
+!i10b 1
+!s100 XV5O2K1_GeN?mJPAhaGR]0
+!s11b 3@B^[==J7o<AR<k5`_HFI0
+IZ_bMCY1K6QAhYQa?37RhV2
+R2
+R0
+R3
+R12
+R13
+L0 11
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 0
+R7
+R8
+R9
+R10
+vregFile
+R1
+!i10b 1
+!s100 ;B7l:cQ9e8Ca6Tm@`gKo91
+!s11b 7Hl1E3FEoTVOYFAc@d@K32
+IZ9D0Xea]=OV^AaMCS8_mS2
+R2
+R0
+R3
+8modules/memoryModules/regFile.v
+Fmodules/memoryModules/regFile.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 0
+R7
+R8
+R9
+R10
+nreg@file
+vregister
+R1
+!i10b 1
+!s100 :n2JTkLR:8_oBTRXFT2@40
+!s11b R<Rfag^lKBK<zmF:HXA6T3
+I_DP:oSU4?S2HXh>OGclO62
+R2
+R0
+R3
+8modules/register.v
+Fmodules/register.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 0
+R7
+R8
+R9
+R10
+vsignExtend
+R1
+!i10b 1
+!s100 iD_L:1Y?9[dVn3Yo_YDEH3
+!s11b =C2?>dS2NnIbilVU<FJM=0
+IaBHCf?R@hVjmZ[A^:80A21
+R2
+R0
+R3
+8modules/signExtend.v
+Fmodules/signExtend.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 0
+R7
+R8
+R9
+R10
+nsign@extend
+vWBStage
+R1
+!i10b 1
+!s100 <61RbolzRB^=R>X=z`5aC3
+!s11b f9Ue7I9Az4J49GT;aXehl1
+Ic6?ce70G4S2W=;l1`^fXN1
+R2
+R0
+R3
+8modules/pipeStages/WBStage.v
+Fmodules/pipeStages/WBStage.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R11
+R6
+!i113 0
+R7
+R8
+R9
+R10
+n@w@b@stage
