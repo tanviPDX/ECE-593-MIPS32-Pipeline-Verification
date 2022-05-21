@@ -30,18 +30,18 @@
 //covergroup for ALU
 	covergroup alu;
 	//coverpoint for operations
-	    /* coverpoint EXE_CMD {
-			bins ADD;
-			bins SUB;
-			bins AND;
-			bins OR;
-			bins NOR;
-			bins XOR;
-			bins SLA;
-			bins SLL;
-			bins SRA;
-			bins SRL;
-		} */
+	    coverpoint EXE_CMD {
+			bins b1 = {ADD};
+			bins b2 = {SUB};
+			bins b3 = {AND};
+			bins b4 = {OR};
+			bins b5 = {NOR};
+			bins b6 = {XOR};
+			bins b7 = {SLA};
+			bins b8 = {SLL};
+			bins b9 = {SRA};
+			bins b10 = {SRL};
+		} 
 	//coverpoint for operands 
 		C2: coverpoint val1 {
 			bins all0 = {'0};
