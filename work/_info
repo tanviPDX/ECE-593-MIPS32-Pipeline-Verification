@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 d/u/ritvik2/ECE593_2022/Project/Dev_tb/ECE-593-MIPS32-Pipeline-Verification
 vadder
-Z1 !s110 1653537152
+Z1 !s110 1653586501
 !i10b 1
 !s100 ShK52ca8hHdK6c[Q59J4C0
 !s11b cdS?8`AMke4@B6AeQ@<oZ3
@@ -25,7 +25,7 @@ Z4 OL;L;2019.2_1;69
 r1
 !s85 0
 31
-Z5 !s108 1653537152.000000
+Z5 !s108 1653586501.000000
 !s107 defines.v|duv/topLevelCircuit.v|duv/modules/ALU.v|duv/modules/adder.v|duv/modules/hazard_forwarding/hazardDetection.v|duv/modules/hazard_forwarding/forwarding.v|duv/modules/memoryModules/regFile.v|duv/modules/memoryModules/instructionMem.v|duv/modules/memoryModules/memDefs.v|duv/modules/memoryModules/dataMem.v|duv/modules/memoryModules/loadtomem.v|duv/modules/pipeStages/EXEStage.v|duv/modules/pipeStages/WBStage.v|duv/modules/pipeStages/IDStage.v|duv/modules/pipeStages/IFStage.v|duv/modules/pipeStages/MEMStage.v|duv/modules/register.v|duv/modules/signExtend.v|duv/modules/mux.v|duv/modules/controlUnit/conditionChecker.v|duv/modules/controlUnit/controller.v|duv/modules/pipeRegisters/ID2EXE.v|duv/modules/pipeRegisters/EXE2MEM.v|duv/modules/pipeRegisters/MEM2WB.v|duv/modules/pipeRegisters/IF2ID.v|
 Z6 !s90 -coveropt|3|+cover=sbfec|+acc|-v|defines.v|duv/modules/pipeRegisters/IF2ID.v|duv/modules/pipeRegisters/MEM2WB.v|duv/modules/pipeRegisters/EXE2MEM.v|duv/modules/pipeRegisters/ID2EXE.v|duv/modules/controlUnit/controller.v|duv/modules/controlUnit/conditionChecker.v|duv/modules/mux.v|duv/modules/signExtend.v|duv/modules/register.v|duv/modules/pipeStages/MEMStage.v|duv/modules/pipeStages/IFStage.v|duv/modules/pipeStages/IDStage.v|duv/modules/pipeStages/WBStage.v|duv/modules/pipeStages/EXEStage.v|duv/modules/memoryModules/loadtomem.v|duv/modules/memoryModules/dataMem.v|duv/modules/memoryModules/memDefs.v|duv/modules/memoryModules/instructionMem.v|duv/modules/memoryModules/regFile.v|duv/modules/hazard_forwarding/forwarding.v|duv/modules/hazard_forwarding/hazardDetection.v|duv/modules/adder.v|duv/modules/ALU.v|duv/topLevelCircuit.v|
 !i113 0
@@ -110,12 +110,12 @@ R10
 vdataMem
 R1
 !i10b 1
-!s100 3JzTkd;L0cIoT:o3;:B>O2
-!s11b D:QKQQG`mVkk9^L:oRDI]3
-I?gP<@60@O1m@QNiGL;=J?3
+!s100 kV3oVbQF4fH32zd3T7e_n0
+!s11b 7<ZP^jK9njQLLVNDjNIX=2
+IkJ:T7:lloh[A7GH?KHQVT3
 R2
 R0
-w1653537150
+w1653586397
 8duv/modules/memoryModules/dataMem.v
 Fduv/modules/memoryModules/dataMem.v
 L0 3
@@ -334,12 +334,12 @@ n@i@f@stage
 vinstructionMem
 R1
 !i10b 1
-!s100 ZVVIIFRHhdcO>1UCdQzTh1
-!s11b ndlUN>kEk:_2SRA^az<Gb3
-IKJd08?CD@YGWmT7^J6CXY3
+!s100 ;AUSc8fhX;ELRKUl3;H8D2
+!s11b f[hG:LjUiOK^7OfPcAjg?0
+I=@=7QCP<ZiJB`:C2a6^OI0
 R2
 R0
-w1653537073
+w1653586319
 8duv/modules/memoryModules/instructionMem.v
 Fduv/modules/memoryModules/instructionMem.v
 L0 3
@@ -359,12 +359,12 @@ ninstruction@mem
 vloadtomem
 R1
 !i10b 1
-!s100 F65kN^]_@>bl@[VNll]A63
-!s11b YcC=B2z=a15n>hF9TC9Z^2
-Ik;JY`biKS;cSb7Q3TaU=j2
+!s100 V[f:>4IPFLiiZQlPSjQZg0
+!s11b 7TCc`1hGKb8W8lm1X[b7l3
+I`4Z^JZX=_<eMZAj=o>C]62
 R2
 R0
-w1653537095
+w1653586413
 8duv/modules/memoryModules/loadtomem.v
 Fduv/modules/memoryModules/loadtomem.v
 L0 3
@@ -458,12 +458,12 @@ n@m@e@m@stage
 vMIPS_Processor
 R1
 !i10b 1
-!s100 VibU66JYX3;7H826_3ATQ3
-!s11b W]oO=SOLR_9^=GZl]ek:32
-I]K?2<DAaWn;Lj4j^H@Xj?2
+!s100 QiDmAW4lZCM2R5V?<:Yez0
+!s11b L4LI0mm<=38Uj6c4ZZ;c`2
+IIIJD5K]1IOloY`:m84gm>1
 R2
 R0
-w1653536065
+w1653586481
 8duv/topLevelCircuit.v
 Fduv/topLevelCircuit.v
 L0 3
@@ -531,12 +531,12 @@ R10
 vregFile
 R1
 !i10b 1
-!s100 ;P8kAgK]FCYC<YXijSU5]3
-!s11b PH4=hc_L3LH2Q:LWV=VlZ0
-ICIKb29noZH661KPW6Q5Uj3
+!s100 _UB7CHdJ=85BW?7E^nfoG1
+!s11b G:][TQf;z8b>=ebkCh?_<2
+InMH`FA7CKoF;Yc8@7lR`V3
 R2
 R0
-w1653537038
+w1653586431
 8duv/modules/memoryModules/regFile.v
 Fduv/modules/memoryModules/regFile.v
 L0 3

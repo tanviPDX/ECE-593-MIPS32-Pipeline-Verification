@@ -9,10 +9,10 @@ module loadtomem (rst, addr, instr_in);
 
   always @(*) begin
     if(rst) begin
-        memDefs.instMem[address] <= instr_in[7:0];
-        memDefs.instMem[address+1] <= instr_in[15:8];
-        memDefs.instMem[address+2] <= instr_in[23:16];
-        memDefs.instMem[address+3] <= instr_in[31:24];
+        MIPS_Processor.md.instMem[address] <= instr_in[7:0];
+        MIPS_Processor.md.instMem[address+1] <= instr_in[15:8];
+        MIPS_Processor.md.instMem[address+2] <= instr_in[23:16];
+        MIPS_Processor.md.instMem[address+3] <= instr_in[31:24];
     end
   end  
   

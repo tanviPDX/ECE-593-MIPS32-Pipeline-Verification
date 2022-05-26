@@ -65,9 +65,11 @@ module MIPS_Processor (input CLOCK_50, input rst, input [`INSTR_WIDTH-1:0] instr
 		.ST_val_sel(ST_val_sel)
 	);
 
+	memDefs md ();
+
 	loadtomem loadmem (
 		.rst(rst),
-		.addr(addr),
+		.addr(PC_IF),
 		.instr_in(instr_in)
 	);
 

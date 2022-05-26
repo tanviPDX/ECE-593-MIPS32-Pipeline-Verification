@@ -11,13 +11,13 @@ module regFile (clk, rst, src1, src2, dest, writeVal, writeEn, reg1, reg2);
   always @ (negedge clk) begin
     if (rst) begin
       for (i = 0; i < `WORD_LEN; i = i + 1)
-        memDefs.regMem[i] <= 0;
+        MIPS_Processor.md.regMem[i] <= 0;
 	    end
 
-    else if (writeEn) memDefs.regMem[dest] <= writeVal;
-    memDefs.regMem[0] <= 0;
+    else if (writeEn) MIPS_Processor.md.regMem[dest] <= writeVal;
+    MIPS_Processor.md.regMem[0] <= 0;
   end
 
-  assign reg1 = (memDefs.regMem[src1]);
-  assign reg2 = (memDefs.regMem[src2]);
+  assign reg1 = (MIPS_Processor.md.regMem[src1]);
+  assign reg2 = (MIPS_Processor.md.regMem[src2]);
 endmodule // regFile

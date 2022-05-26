@@ -8,5 +8,5 @@ module instructionMem (rst, addr, instruction);
 
   wire [$clog2(`INSTR_MEM_SIZE)-1:0] address = addr[$clog2(`INSTR_MEM_SIZE)-1:0];
 
-  assign instruction = {memDefs.instMem[address], memDefs.instMem[address + 1], memDefs.instMem[address + 2], memDefs.instMem[address + 3]};
+  assign instruction = {MIPS_Processor.md.instMem[address], MIPS_Processor.md.instMem[address + 1], MIPS_Processor.md.instMem[address + 2], MIPS_Processor.md.instMem[address + 3]};
 endmodule // instructionMem
