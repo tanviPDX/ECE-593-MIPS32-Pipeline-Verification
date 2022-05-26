@@ -4,13 +4,14 @@
 `define EXE_CMD_LEN 4
 `define FORW_SEL_LEN 2
 `define OP_CODE_LEN 6
-`define NO_INSTR_BYTES 236
+`define NO_INSTR 236
 
 // Memory constants
 `define DATA_MEM_SIZE 1024
 `define INSTR_MEM_SIZE 1024
 `define REG_FILE_SIZE 32
 `define MEM_CELL_SIZE 8
+`define INSTR_WIDTH 32
 
 // To be used inside controller.v
 `define OP_NOP 6'b000000

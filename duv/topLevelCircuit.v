@@ -1,6 +1,6 @@
 `include "defines.v"
 
-module MIPS_Processor (input CLOCK_50, input rst, input [`NO_INSTR_BYTES-1:0] [`MEM_CELL_SIZE-1:0] instr_byte, input forward_EN);
+module MIPS_Processor (input CLOCK_50, input rst, input [`INSTR_WIDTH-1:0] instr_in, input forward_EN);
 	wire clock = CLOCK_50;
 	wire [`WORD_LEN-1:0] PC_IF, PC_ID, PC_EXE, PC_MEM;
 	wire [`WORD_LEN-1:0] inst_IF, inst_ID;
@@ -65,6 +65,12 @@ module MIPS_Processor (input CLOCK_50, input rst, input [`NO_INSTR_BYTES-1:0] [`
 		.ST_val_sel(ST_val_sel)
 	);
 
+	loadtomem loadmem (
+		.rst(rst),
+		.addr(addr),
+		.instr_in(instr_in)
+	);
+
 	//###########################
 	//##### PIPLINE STAGES ######
 	//###########################
@@ -76,7 +82,6 @@ module MIPS_Processor (input CLOCK_50, input rst, input [`NO_INSTR_BYTES-1:0] [`
 		.brTaken(Br_Taken_ID),
 		.brOffset(val2_ID),
 		// OUTPUTS
-		.instr_byte(instr_byte),
 		.instruction(inst_IF),
 		.PC(PC_IF)
 	);

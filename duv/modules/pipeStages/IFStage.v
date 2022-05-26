@@ -1,8 +1,7 @@
 `include "defines.v"
 
-module IFStage (clk, rst, brTaken, brOffset, freeze, PC, instr_byte, instruction);
+module IFStage (clk, rst, brTaken, brOffset, freeze, PC, instruction);
   input clk, rst, brTaken, freeze;
-  input [`NO_INSTR_BYTES-1:0] [`MEM_CELL_SIZE-1:0] instr_byte;
   input [`WORD_LEN-1:0] brOffset;
   output [`WORD_LEN-1:0] PC, instruction;
 
@@ -32,7 +31,6 @@ module IFStage (clk, rst, brTaken, brOffset, freeze, PC, instr_byte, instruction
   instructionMem instructions (
     .rst(rst),
     .addr(PC),
-	.instr_byte(instr_byte),
     .instruction(instruction)
   );
 
