@@ -1,7 +1,7 @@
 class generator;
 	mailbox drv_mbx;
 	event drv_done;
-	int iter = 128;
+	int iter = 10;
 	
 	task run();
 		for (int i = 0; i < iter; i = i + 1) begin

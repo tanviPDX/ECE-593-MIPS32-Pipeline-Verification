@@ -1,26 +1,21 @@
 `include "defines.v"
 
 class transaction;
-	rand byte [`NO_INSTR_BYTES-1:0] instr_byte;
-	bit [`WORD_LEN-1:0] ALURes_WB;
-	bit [`WORD_LEN-1:0] dataMem_out_WB;
-	bit [`WORD_LEN-1:0] WB_result;
-	bit hazard_detected;
-	bit [`WORD_LEN-1:0] PC_MEM; 
-	
-constraint opcode { foreach (instr_byte[i]) {
-			if (i % 4 == 3){
-                        (( instr_byte[i] & 252) >> 2) inside {0, 1, 3, 5, 6, 7, 
-				8, 9, 10, 11, 12, 32, 33, 36, 37, 40, 41, 42 };	  
-		  			}
-		  }}
+    rand bit [5:0] op_code;
+    rand bit [4:0] rd;
+    rand bit [4:0] rs1;
+    rand bit [4:0] rs2;
+    rand bit [11:0] immediate_r;
+    rand bit [15:0] immediate_i;
 
-constraint imm_field { foreach (instr_byte[i]) {
-		        if (i % 4 == 3){
-                            if ((( instr_byte[i] & 252) >> 2) > 36) {  
-				      instr_byte[i-2] == 8'b0; }
-		     }}}
+	rand byte [`INSTR_WIDTH-1:0] instr_in;
+	
+constraint opcode {  
+                    op_code inside {0, 1, 3, 5, 6, 7, 8, 9, 10, 11, 12, 32, 33, 36, 37, 40, 41, 42};	  
+}
+
+constraint imm_field {
+                    if (op_code > 36)
+				    	immediate_i [15:8] == 8'b0; 
+}
 endclass
-	
-	
-	
