@@ -1,12 +1,15 @@
+`include "defines.v"
+
+import mips32::*;
 class generator;
 	mailbox drv_mbx;
 	event drv_done;
-	int iter = 10;
+	int iter = `NO_INSTR;
 	
-	task run();
+	task execute();
 		for (int i = 0; i < iter; i = i + 1) begin
 			transaction trans = new;
-			trans.randomize();
+			if(!trans.randomize()) $fatal("Randomization failed");
 			drv_mbx.put(trans);
 			@(drv_done);
 		end

@@ -1,7 +1,6 @@
 `include "defines.v" 
 
- import mips32::*;
-
+import mips32::*;
  class coverage;
  
  //temperory adding these signals. Remove it later

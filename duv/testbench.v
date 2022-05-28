@@ -24,7 +24,6 @@ module testbench ();
     @posedge(clk);
     instr_in <= 32'h3402A084;
     @posedge(clk);
-    #100
     rst = 0;
   end
 endmodule // test

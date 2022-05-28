@@ -41,9 +41,9 @@
 `define EXE_NOR 4'b0110
 `define EXE_XOR 4'b0111
 `define EXE_SLA 4'b1000
-`define EXE_SLL 4'b1000
-`define EXE_SRA 4'b1001
-`define EXE_SRL 4'b1010
+`define EXE_SLL 4'b1001
+`define EXE_SRA 4'b1010
+`define EXE_SRL 4'b1011
 `define EXE_NO_OPERATION 4'b1111 // for NOP, BEZ, BNQ, JMP
 
 // To be used in conditionChecker

@@ -8,7 +8,7 @@ class transaction;
     rand bit [11:0] immediate_r;
     rand bit [15:0] immediate_i;
 
-	rand byte [`INSTR_WIDTH-1:0] instr_in;
+	rand bit [`INSTR_WIDTH-1:0] instr_in;
 	
 constraint opcode {  
                     op_code inside {0, 1, 3, 5, 6, 7, 8, 9, 10, 11, 12, 32, 33, 36, 37, 40, 41, 42};	  
