@@ -18,4 +18,7 @@ constraint imm_field {
                     if (op_code > 36)
 				    	immediate_i [15:8] == 8'b0; 
 }
+
+constraint P
+
 endclass
