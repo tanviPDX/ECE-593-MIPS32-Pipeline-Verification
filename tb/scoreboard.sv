@@ -19,71 +19,71 @@ class scoreboard;
                 end
 
                 6'b000001: begin
-                    regMem[trans.rd] = v2bfm.v_mem.regMem[trans.rs1] + v2bfm.v_mem.regMem[trans.rs2_imm];
+                    regMem[trans.rd] = v2bfm.regMem[trans.rs1] + v2bfm.regMem[trans.rs2_imm];
                 end
 
                 6'b000011: begin
-                    regMem[trans.rd] = v2bfm.v_mem.regMem[trans.rs1] - v2bfm.v_mem.regMem[trans.rs2_imm];
+                    regMem[trans.rd] = v2bfm.regMem[trans.rs1] - v2bfm.regMem[trans.rs2_imm];
                 end
 
                 6'b000101: begin
-                    regMem[trans.rd] = v2bfm.v_mem.regMem[trans.rs1] & v2bfm.v_mem.regMem[trans.rs2_imm];
+                    regMem[trans.rd] = v2bfm.regMem[trans.rs1] & v2bfm.regMem[trans.rs2_imm];
                 end
 
                 6'b000110: begin
-                    regMem[trans.rd] = v2bfm.v_mem.regMem[trans.rs1] | v2bfm.v_mem.regMem[trans.rs2_imm];
+                    regMem[trans.rd] = v2bfm.regMem[trans.rs1] | v2bfm.regMem[trans.rs2_imm];
                 end    
 
                 6'b000111: begin
-                    regMem[trans.rd] = ~(v2bfm.v_mem.regMem[trans.rs1] | v2bfm.v_mem.regMem[trans.rs2_imm]);
+                    regMem[trans.rd] = ~(v2bfm.regMem[trans.rs1] | v2bfm.regMem[trans.rs2_imm]);
                 end
 
                 6'b001000: begin
-                    regMem[trans.rd] = v2bfm.v_mem.regMem[trans.rs1] ^ v2bfm.v_mem.regMem[trans.rs2_imm];
+                    regMem[trans.rd] = v2bfm.regMem[trans.rs1] ^ v2bfm.regMem[trans.rs2_imm];
                 end
 
                 6'b001001: begin
-                    regMem[trans.rd] = v2bfm.v_mem.regMem[trans.rs1] <<< v2bfm.v_mem.regMem[trans.rs2_imm];
+                    regMem[trans.rd] = v2bfm.regMem[trans.rs1] <<< v2bfm.regMem[trans.rs2_imm];
                 end
 
                 6'b001010: begin
-                    regMem[trans.rd] = v2bfm.v_mem.regMem[trans.rs1] << v2bfm.v_mem.regMem[trans.rs2_imm];
+                    regMem[trans.rd] = v2bfm.regMem[trans.rs1] << v2bfm.regMem[trans.rs2_imm];
                 end
 
                 6'b001011: begin
-                    regMem[trans.rd] = v2bfm.v_mem.regMem[trans.rs1] >>> v2bfm.v_mem.regMem[trans.rs2_imm];
+                    regMem[trans.rd] = v2bfm.regMem[trans.rs1] >>> v2bfm.regMem[trans.rs2_imm];
                 end
 
                 6'b001100: begin
-                    regMem[trans.rd] = v2bfm.v_mem.regMem[trans.rs1] >> v2bfm.v_mem.regMem[trans.rs2_imm];
+                    regMem[trans.rd] = v2bfm.regMem[trans.rs1] >> v2bfm.regMem[trans.rs2_imm];
                 end
 
                 6'b100000: begin
-                    if (trans.immediate_i[15] == 0)
-                        regMem[trans.rd] = v2bfm.v_mem.regMem[trans.rs1] + {{16{'0}}, trans.immediate_i};
+                    if (trans.rs2_imm[4] == 0)
+                        regMem[trans.rd] = v2bfm.regMem[trans.rs1] + {{16{'0}}, {trans.rs2_imm, trans.immediate}};
                     else
-                        regMem[trans.rd] = v2bfm.v_mem.regMem[trans.rs1] + {{16{'1}}, trans.immediate_i};
+                        regMem[trans.rd] = v2bfm.regMem[trans.rs1] + {{16{'1}}, {trans.rs2_imm, trans.immediate}};
                 end
 
                 6'b100001: begin
-                    if (trans.immediate_i[15] == 0)
-                        regMem[trans.rd] = v2bfm.v_mem.regMem[trans.rs1] - {{16{'0}}, trans.immediate_i};
+                    if (trans.rs2_imm[4] == 0)
+                        regMem[trans.rd] = v2bfm.regMem[trans.rs1] - {{16{'0}}, {trans.rs2_imm, trans.immediate}};
                     else
-                        regMem[trans.rd] = v2bfm.v_mem.regMem[trans.rs1] - {{16{'1}}, trans.immediate_i};
+                        regMem[trans.rd] = v2bfm.regMem[trans.rs1] - {{16{'1}}, {trans.rs2_imm, trans.immediate}};
                 end
 
                 6'b100100: begin
-                    if (trans.immediate_i[15] == 0)
-                        regMem[trans.rd] = v2bfm.v_mem.dataMem[v2bfm.v_mem.regMem[trans.rs1] + {{16{'0}}, trans.immediate_i}];
+                    if (trans.rs2_imm[4] == 0)
+                        regMem[trans.rd] = v2bfm.dataMem[v2bfm.regMem[trans.rs1] + {{16{'0}}, {trans.rs2_imm, trans.immediate}}];
                     else
-                        regMem[trans.rd] = v2bfm.v_mem.dataMem[v2bfm.v_mem.regMem[trans.rs1] + {{16{'1}}, trans.immediate_i}];
+                        regMem[trans.rd] = v2bfm.dataMem[v2bfm.regMem[trans.rs1] + {{16{'1}}, {trans.rs2_imm, trans.immediate}}];
                 end
 
                 6'b100101: begin
-                    if (trans.immediate_i[15] == 0)
-                        dataMem[v2bfm.v_mem.regMem[trans.rs1] + {{16{'0}}, trans.immediate_i}] = v2bfm.v_mem.regMem[trans.rd];
+                    if (trans.rs2_imm[4] == 0)
+                        dataMem[v2bfm.regMem[trans.rs1] + {{16{'0}}, {trans.rs2_imm, trans.immediate}}] = v2bfm.regMem[trans.rd];
                     else
-                        dataMem[v2bfm.v_mem.regMem[trans.rs1] + {{16{'1}}, trans.immediate_i}] = v2bfm.v_mem.regMem[trans.rd];
+                        dataMem[v2bfm.regMem[trans.rs1] + {{16{'1}}, {trans.rs2_imm, trans.immediate}}] = v2bfm.regMem[trans.rd];
                 end
 
                 6'b101000: begin
@@ -104,17 +104,17 @@ class scoreboard;
             endcase
 
             foreach (regMem[i]) begin
-                if(regMem[i] == v2bfm.v_mem.regMem[i])
-                    $display("[%0t] Scoreboard for Data Memory PASS.", $time);
+                if(regMem[i] === v2bfm.regMem[i])
+                    $display("[%0t] Scoreboard for Reg Memory PASS.", $time);
                 else
-                    $display("[%0t] Scoreboard for Data Memory FAIL.", $time);
+                    $display("[%0t] Scoreboard for Reg Memory FAIL. value: %h", $time, regMem[i]);
             end
 
             foreach (dataMem[i]) begin
-                if(dataMem[i] == v2bfm.v_mem.dataMem[i])
+                if(dataMem[i] === v2bfm.dataMem[i])
                     $display("[%0t] Scoreboard for Data Memory PASS.", $time);
                 else
-                    $display("[%0t] Scoreboard for Data Memory FAIL.", $time);
+                    $display("[%0t] Scoreboard for Data Memory FAIL. value: %h", $time, dataMem[i]);
             end
         end    
     endtask

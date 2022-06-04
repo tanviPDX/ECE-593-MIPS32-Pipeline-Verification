@@ -1,3 +1,4 @@
+`include "defines.v"
 class transaction;
     rand bit [5:0] opCode;
     rand bit [4:0] rd;

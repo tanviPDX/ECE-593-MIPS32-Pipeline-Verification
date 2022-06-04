@@ -7,7 +7,7 @@ class monitor;
             transaction mon_trans = new();
             @(posedge mips_vif.clk);
             #1;
-            mon_trans.instr_in <= mips_vif.instr_in;
+            mon_trans.instr_in = mips_vif.instr_in;
             scb_mbx.put(mon_trans);
         end 
     endtask

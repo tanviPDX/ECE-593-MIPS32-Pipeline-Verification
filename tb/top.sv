@@ -1,15 +1,18 @@
+import mips32::*;
+`include "defines.v"
 
 module top;
-import mips32::*;
 
+    
     mips32_bfm bfm ();
-    MIPS_Processor mips (.CLOCK_50(bfm.clk), .rst(bfm.rst), .instr_in(bfm.instr_in), .forward_EN(bfm.forward_EN));
+    MIPS_Processor mips (.bif(bfm), .instr_in(bfm.instr_in));
 
+    bind memDefs mips32_bfm inst1();
+    
     test tt;
 
     initial begin
         bfm.reset();
-        bfm.v_mem = mips.md;
         tt = new;
         tt.en.mips_vif = bfm;
         tt.execute();

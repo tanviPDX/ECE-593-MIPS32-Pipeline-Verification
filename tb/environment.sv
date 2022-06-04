@@ -15,9 +15,7 @@ class env;
 		dri = new;
 		mon = new;
 		sco = new;
-		sco.v2bfm = mips_vif;
-		cov = new;
-		cov.bfm = mips_vif;
+		cov = new(mips_vif);
 		scb_mbx = new();
 		drv_mbx = new;
 	endfunction 
@@ -26,6 +24,8 @@ class env;
 		//connect virtual interface handles
 		dri.mips_vif = mips_vif;
 		mon.mips_vif = mips_vif;
+		sco.v2bfm = mips_vif;
+		cov.bfm = mips_vif;
 
 		//connect mailboxes
 		dri.drv_mbx = drv_mbx;
