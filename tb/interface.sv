@@ -12,7 +12,7 @@ interface mips32_bfm ();
 	logic [`WORD_LEN-1:0] regMem [0:`REG_FILE_SIZE-1];
 
 
-	wire forward_EN; 
+	logic forward_EN; 
 
 	wire [`WORD_LEN-1:0] PC_IF, PC_ID, PC_EXE, PC_MEM;
 	wire [`WORD_LEN-1:0] inst_IF, inst_ID;

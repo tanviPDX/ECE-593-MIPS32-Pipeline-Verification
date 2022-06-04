@@ -5,6 +5,7 @@ class transaction;
     rand bit [4:0] rs1;
     rand bit [4:0] rs2_imm;
     rand bit [10:0] immediate;
+    rand bit forward_EN;
 
 	bit [`INSTR_WIDTH-1:0] instr_in;
 	

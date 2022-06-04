@@ -44,6 +44,6 @@ class env;
 			dri.execute();
 			mon.execute();
 			gen.execute();
-		join_any 
+		join_any
 	endtask	
 endclass

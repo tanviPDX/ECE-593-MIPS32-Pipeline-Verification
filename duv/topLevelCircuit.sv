@@ -50,7 +50,6 @@ module MIPS_Processor (mips32_bfm bif, input [`INSTR_WIDTH-1:0] instr_in);
 
 	loadtomem loadmem (
 		.rst(bif.rst),
-		.addr(bif.PC_IF),
 		.instr_in(instr_in)
 	);
 

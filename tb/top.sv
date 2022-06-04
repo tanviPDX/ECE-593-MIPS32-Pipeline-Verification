@@ -11,8 +11,12 @@ module top;
     
     test tt;
 
+    
+
     initial begin
+        $monitor("CMD: %p", mips.md.instMem); 
         bfm.reset();
+
         tt = new;
         tt.en.mips_vif = bfm;
         tt.execute();

@@ -23,42 +23,43 @@
 //covergroup for ALU
 	covergroup alu;
 	//coverpoint for operations
-	    coverpoint bfm.EXE_CMD_EXE {
-			bins b1 = {ADD};
-			bins b2 = {SUB};
-			bins b3 = {AND};
-			bins b4 = {OR};
-			bins b5 = {NOR};
-			bins b6 = {XOR};
-			bins b7 = {SLA};
-			bins b8 = {SLL};
-			bins b9 = {SRA};
-			bins b10= {SRL};
+	    coverpoint bfm.EXE_CMD_ID {
+			bins b1 = {EX_ADD};
+			bins b2 = {EX_SUB};
+			bins b3 = {EX_AND};
+			bins b4 = {EX_OR};
+			bins b5 = {EX_NOR};
+			bins b6 = {EX_XOR};
+			bins b7 = {EX_SLA};
+			bins b8 = {EX_SLL};
+			bins b9 = {EX_SRA};
+			bins b10= {EX_SRL};
+			bins b11= {EX_NO_OPERATION};
 		} 
 	//coverpoint for operands 
 		C2: coverpoint bfm.val1_EXE {
 			bins all0 = {'0};
 			bins all1 = {'1};			
-			bins everthingelse = {[1:(2**32)-1]};
+			bins everthingelse = {[1:32'hFFFFFFFE]};
 		}
 		C3: coverpoint bfm.val2_EXE {
 			bins all0 = {'0};
 			bins all1 = {'1};		
-			bins everthingelse = {[1:(2**32)-1]};
+			bins everthingelse = {[1:32'hFFFFFFFE]};
 		}			
 	endgroup 
 
 	//covergroup for opcode
-	// covergroup opcodes;
-	// 	coverpoint bfm.opCode {
-	// 		bins op1[] = {[0:1]};
-	// 		bins op2   = {3};
-	// 		bins op3[] = {[5:12]};
-	// 		bins op4[] = {[32:33]};
-	// 		bins op5[] = {[36:37]};
-	// 		bins op6[] = {[40:42]};
-	// 	}
-	// endgroup
+	covergroup opcodes;
+		coverpoint bfm.instr_in[31:26] {
+			bins op1[] = {[0:1]};
+			bins op2   = {3};
+			bins op3[] = {[5:12]};
+			bins op4[] = {[32:33]};
+			bins op5[] = {[36:37]};
+			bins op6[] = {[40:42]};
+		}
+	endgroup
 
 	//covergroup for immediate field 
 	covergroup immediate;
@@ -87,7 +88,7 @@
     	forward_unit = new();
     	muxes = new();
 		alu = new();
-		//opcodes = new();
+		opcodes = new();
 		immediate = new();
 		branch = new();
 		bfm = b;
@@ -101,7 +102,7 @@
         forward_unit.sample();
 		muxes.sample();
 		alu.sample();
-		//opcodes.sample();
+		opcodes.sample();
 		immediate.sample();
 		branch.sample();
       end

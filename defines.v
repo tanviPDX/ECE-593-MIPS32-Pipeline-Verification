@@ -4,7 +4,7 @@
 `define EXE_CMD_LEN 4
 `define FORW_SEL_LEN 2
 `define OP_CODE_LEN 6
-`define NO_INSTR 236
+`define NO_INSTR 256
 
 // Memory constants
 `define DATA_MEM_SIZE 1024
