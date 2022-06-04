@@ -41,6 +41,7 @@ package mips32;
 	`include "generator.sv"
 	`include "scoreboard.sv"
 	`include "coverage.sv"
+	`include "monitor.sv"
 	`include "environment.sv"
-
+	`include "test.sv"
 endpackage

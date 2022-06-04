@@ -1,5 +1,3 @@
-import mips32::*;
-
 class driver;
     virtual mips32_bfm mips_vif;
     event drv_done;

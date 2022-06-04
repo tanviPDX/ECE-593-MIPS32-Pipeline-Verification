@@ -3,9 +3,12 @@
 interface mips32_bfm ();
 
 // Interface signals
-	logic clk, rst;
+	logic clk;
+	logic rst;
 	logic [`INSTR_WIDTH-1:0] instr_in;
 	logic forward_EN; 
+
+	static virtual memDefs v_mem;
 
 	logic [`WORD_LEN-1:0] PC_IF, PC_ID, PC_EXE, PC_MEM;
 	logic [`WORD_LEN-1:0] inst_IF, inst_ID;
@@ -25,6 +28,13 @@ interface mips32_bfm ();
 	logic MEM_W_EN_ID, MEM_W_EN_EXE, MEM_W_EN_MEM;
 	logic WB_EN_ID, WB_EN_EXE, WB_EN_MEM, WB_EN_WB;
 	logic hazard_detected, is_imm, ST_or_BNE;
+
+	initial begin
+		clk = 0;
+		forever begin
+			#10 clk = ~clk;
+		end
+	end
 	
 // task for reset	
 	task reset();

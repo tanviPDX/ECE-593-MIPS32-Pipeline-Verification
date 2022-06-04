@@ -1,8 +1,6 @@
 DESIGN_FILES := defines.v $(shell find duv/modules -type f -name '*.v')
 DESIGN_FILES += duv/topLevelCircuit.v
-TESTBENCH_FILES := tb/package.sv tb/driver.sv tb/generator.sv \
-					tb/coverage.sv tb/scoreboard.sv tb/transaction.sv \
-					tb/interface.sv tb/environment.sv
+TESTBENCH_FILES := tb/package.sv tb/interface.sv tb/top.sv 
 
 compile:
 	vlib work
